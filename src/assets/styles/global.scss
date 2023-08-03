@@ -1,0 +1,175 @@
+.app-container {
+  height: calc(100vh - 84px);
+  padding: 30px 20px !important;
+  background: #f0f2f5;
+  overflow: auto;
+
+  .gl-body {
+    background: #fff;
+    border-radius: 3px;
+    padding: 25px;
+  }
+
+  .gl-search_form {
+    background: #fff;
+    border-radius: 3px;
+    padding: 25px 25px 0;
+  }
+
+  // 搜索栏
+  .gl-search_form {
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    .el-form-item__label {
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(0,0,0,.85);
+    }
+
+    .el-form-item {
+      margin-bottom: 25px;
+    }
+
+    .el-popover__reference {
+      width: 100px;
+      text-align: left;
+    }
+
+    .gl-search_button {
+      float: right;
+    }
+  }
+
+  // 主体部分
+  .gl-body {
+    .mb8 {
+      float: right;
+
+      .el-button {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+// 更多搜索项弹出框
+.gl-search_popover {
+  width: calc(100vw - 16vw);
+  left: unset !important;
+  right: 20px;
+  padding: 22px 0 0 25px;
+
+  .gl-search_form {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    max-height: 60vh;
+
+    .el-form-item {
+      width: calc((100vw - 437px) / 4);
+      min-width: 257px;
+      margin-right: 25px;
+      display: flex;
+
+      .el-form-item__label {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(0,0,0,.85);
+      }
+
+      .el-form-item__content {
+        flex: 1;
+
+        .el-select, .el-input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// 消息弹框
+.el-message-box {
+  width: unset;
+}
+
+// 表单页面
+.gl-form_container {
+  padding: 30px;
+  height: calc(100vh - 84px);
+  overflow: auto;
+
+  .el-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .el-form-item {
+      width: calc((100vw - 437px) / 4);
+      min-width: 257px;
+      margin-right: 25px;
+      display: flex;
+
+      .el-form-item__label {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(0,0,0,.85);
+      }
+
+      .el-form-item__content {
+        flex: 1;
+
+        .el-select, .el-input {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .gl-form_btns {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+// 弹框样式
+.gl-form_dialog {
+  .el-dialog {
+    width: 30vw !important;
+  }
+  @media screen and (max-width: 1000px) {
+    .el-dialog {
+      width: 80vw !important;
+    }
+  }
+}
+
+// 计数器样式
+.ipt-number {
+  width: 100%;
+  .el-input__inner {
+    text-align: left;
+  }
+}
+
+// 遮罩层样式调整
+.v-modal, .el-dialog__wrapper {
+  position: absolute;
+}
+
+// 表格单行颜色区分样式
+.el-table .uncheck_row {
+  background: oldlace;
+}
+// 表格头部栏右侧样式
+.el-table__fixed-right-patch {
+  background: #f8f8f9;
+  border-bottom: unset;
+}
+
+// 单行文本溢出省略号显示
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
